@@ -1,1 +1,1 @@
-echo -e "streamlit==1.38.0\nfirebase-admin==6.5.0\nbcrypt==4.2.0\npython-dotenv==1.0.1\nrich==13.7.1" > requirements.txt
+streamlit==1.38.0 firebase-admin==6.5.0 bcrypt==4.2.0 python-dotenv==1.0.1 rich==13.7.1
