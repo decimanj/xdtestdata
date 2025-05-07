@@ -1,0 +1,228 @@
+/* General Styles */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/*page Loader*/
+.stSpinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.stSpinner h2 {
+    font-size: 16px;
+    color: #007bff;
+    margin: 0;
+}
+
+.stSpinner p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0 0 0;
+}
+/*End of Spinner Page Load*/
+
+/* App Container */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a73e8;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subheader {
+    font-size: 14px;
+    /*color: #ffffff;*/
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Welcome Bar */
+.welcome-bar {
+    background-color: #323636;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-text {
+    font-size: 16px;
+    font-weight: 500;
+    /*color: #ffffff;*/
+}
+
+/* Card Style */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+	display:none;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a73e8;
+    margin-bottom: 16px;
+}
+
+.data-set-title {
+    font-size: 18px;
+    font-weight: 600;
+    /*color: #ffffff;*/
+    margin-top: 20px;
+    margin-bottom: 12px;
+    border-left: 4px solid #1a73e8;
+    padding-left: 12px;
+}
+
+/* Labels */
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    /*color: #ffffff;*/
+    margin-bottom: 4px;
+    display: block;
+}
+
+.required {
+    color: #e63946;
+    font-size: 14px;
+}
+
+/* Info Text */
+.info-text {
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Advanced Settings Section */
+.advanced-settings {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Sidebar */
+.sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a73e8;
+    margin-bottom: 16px;
+}
+
+/* Streamlit Component Overrides */
+.stButton > button {
+    background-color: #1a73e8;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.stButton > button:hover {
+    background-color: #1557b0;
+}
+
+.stTextInput > div > div > input,
+.stSelectbox > div > div > select {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+    /*background-color: #222225;*/
+}
+
+.stTextArea > div > div > textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+	/*background-color: #222225;*/
+}
+
+/* Tabs */
+.stTabs [role="tablist"] {
+    border-bottom: 2px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.stTabs [role="tab"] {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    padding: 10px 16px;
+    border-bottom: 2px solid transparent;
+}
+
+.stTabs [role="tab"][aria-selected="true"] {
+    color: #1a73e8;
+    border-bottom: 2px solid #1a73e8;
+}
+
+.stTabs [role="tab"]:hover {
+    color: #1a73e8;
+}
+
+/* Expander */
+.stExpander {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.stExpander > summary {
+    background-color: #fafafa;
+    padding: 12px 16px;
+    font-weight: 500;
+    color: #333;
+    border-radius: 8px;
+}
+
+.stExpander > div {
+    padding: 16px;
+}
+
+/* Success and Error Messages */
+.stSuccess, .stError {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+}
+
+.stSuccess {
+    background-color: #e7f5e9;
+    color: #2e7d32;
+}
+
+.stError {
+    background-color: #ffebee;
+    color: #d32f2f;
+}
